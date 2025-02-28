@@ -1,0 +1,491 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+
+section nav .logo img{
+     width: 100px;
+     cursor: pointer;
+     margin: 7px, 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+ section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+ }
+
+ section nav li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+ }
+
+ section nav li a::after{
+     content: '';
+     width: 0;
+     height: 2px;
+     background: #fac031;
+     display: block;
+     transition: 0.2s linear;
+
+ }
+
+ section nav li a:hover::after{
+    width: 100%;
+ }
+
+ section nav li a:hover{
+    color: #fac031;
+ }
+
+ section nav .icon i{
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+
+ section nav .icon i:hover{
+    color: #fac031;
+ }
+
+ section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+ }
+
+ section .main .main-text h1{
+    font-size: 65px;
+    position: relative;
+    top: -120px;
+    left: 20px;     
+ }
+
+ section .main .main-text h1 span{
+   margin-left: 15px;
+   color: #fac031;
+   font-family: mv boli;
+   line-height: 22px;
+   font-size: 70px;
+
+ }
+
+ section .main .main-image{
+    width: 700px;
+    position: relative;
+    left: 40px;
+ }
+
+
+ section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 230px;
+    bottom: 150px;
+    line-height: 22px;
+ }
+
+ section .main-button{
+    background: #fac031;
+    position: relative;
+    left: 230px;
+    bottom: 90px;
+    width: 150px;
+    cursor: pointer;
+    padding: 15px 25px;
+ }
+
+ section .main-button a{
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+
+ }
+
+ section .main-button  i{
+    color: white;
+    transition: 0.3s;
+ }
+
+ section .main-button:hover i{
+    transform: translateX(7px);
+ }
+
+
+ /*ABOUT*/
+ 
+ .about{
+    width: 100%;
+    height: 100vh;
+    padding: 90px, 0;
+ }
+
+ .about .about-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about-main .abt-image img{
+     width: 800px;
+     position: relative;
+     top: 70px;    
+}
+
+.about .about-main .abt-text h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+
+.about .about-main .abt-text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 30px;
+}
+
+.about .about-main .abt-text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.about .about-main .abt-text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+
+.about .abt-btn{
+    background: #fac031;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 60%;
+    bottom: -40px;
+}
+
+
+/*Menu*/
+
+.menu{
+    width: 100%;
+    padding: 80px 0;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.menu h1 span{
+    color: #fac031;
+    margin-left: 25px;
+    font-family: mv boli;
+}
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu-box{
+    width: 96%;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .menu-box .menu-card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu-box .menu-card .menu-img{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu-box .menu-card .menu-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .menu-box .menu-card .menu-img:hover img{
+transform: scale(1.1);
+}
+
+.menu .menu-box .menu-card .small-card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 1;
+    border-radius: 7px; 
+    transition: 0.3s; 
+}
+
+.menu .menu-box .menu-card:hover .small-card{
+position: relative;
+top: -240px;
+right: 20px;
+opacity: 1;
+
+}
+
+.menu .menu-box .menu-card .small-card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 6px black;
+    transition: 0.2s;
+}
+
+.menu .menu-box .menu-card .small-card i:hover{
+    color: #fac031;
+}
+
+.menu .menu-box .menu-card .menu-info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+
+
+.menu .menu-box .menu-card .menu-info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+
+.menu .menu-box .menu-card .menu-info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.menu .menu-box .menu-card .menu-info .menu-icon{
+    color: #fac031;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+.menu .menu-box .menu-card .menu-info .menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+
+/**GALLARY**/
+
+.gallary{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.gallary h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary-img-box{
+    width: 95%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.gallary .gallary-img-box .gallary-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.gallary .gallary-img-box .gallary-img img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallary .gallary-img-box .gallary-img:hover img{
+   opacity: 0.4;
+}
+
+.gallary .gallary-img-box .gallary-img h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary-img-box .gallary-img:hover h3{
+    opacity: 1;
+}
+
+.gallary .gallary-img-box .gallary-img p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary-img-box .gallary-img:hover p{
+    opacity: 1;
+}
+
+.gallary .gallary-img-box .gallary-img .gallary-btn{
+    position: absolute;
+    margin-top: 180px;
+    color: black;
+    background: #fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary-img-box .gallary-img:hover .gallary-btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+ /***REVIEW***/
+  .Review{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+  }
+
+  .Review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+  }
+
+  .Review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 15px;
+    display: block;
+  }
+
+  .Review .Review-box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+  }
